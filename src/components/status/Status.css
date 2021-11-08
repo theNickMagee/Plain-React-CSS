@@ -1,0 +1,20 @@
+.status-container {
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 30rem;
+  background-color: rgb(71, 71, 71);
+  color: white;
+  border-radius: 2rem;
+  font-size: 3rem;
+}
+
+.green {
+  color: greenyellow;
+}
+
+.red {
+  color: red;
+}

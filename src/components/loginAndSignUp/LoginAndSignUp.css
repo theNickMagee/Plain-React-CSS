@@ -1,0 +1,71 @@
+/* ENTIER CONTAINER */
+.login-container {
+  background-color: rgb(39, 39, 39);
+  border-radius: 0.4rem;
+  height: 40rem;
+  padding: 2rem 1rem;
+  min-width: 40rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
+
+  position: relative;
+}
+
+/* TEXT CONTAINER */
+.login-toggle-container {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  position: relative;
+  height: 5rem;
+  /* outline: solid 0.1rem rgb(126, 126, 126); */
+  border-radius: 0.6rem;
+  background-color: rgba(175, 175, 175, 0);
+  z-index: 3;
+}
+
+.login-choice {
+  font-size: 2rem;
+  color: white;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* PUT SLIDER UNDER OPTIONS */
+.login-toggle-container,
+.login-square-container {
+  position: absolute;
+  top: 3rem;
+  right: 50%;
+  transform: translateX(50%);
+}
+
+.login-square-container {
+  display: flex;
+  width: 80%;
+  height: 5rem;
+  background-color: rgb(109, 109, 109);
+  border-radius: 0.7rem;
+}
+
+.login-square {
+  background-image: linear-gradient(to right, #e44100, #ff5613);
+  box-shadow: 0 0 1rem #ff5613;
+  width: 50%;
+  height: 100%;
+  border-radius: 0.7rem;
+  transition: margin-left 0.25s;
+  /* z-index: -1; */
+}
+
+.login-square.right {
+  margin-left: 50%;
+}
+
+.login-square.right {
+}

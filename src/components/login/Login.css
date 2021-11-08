@@ -1,0 +1,38 @@
+.login-container {
+  color: white;
+  background-color: rgb(71, 71, 71);
+
+  border-radius: 0.4rem;
+  /* font-size: 3rem; */
+
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  justify-content: space-around;
+  align-content: center;
+  text-align: center;
+  height: 30rem;
+  padding: 1rem 1rem;
+
+  width: 30rem;
+}
+
+.login-label {
+  font-size: 2rem;
+}
+
+.email-field {
+  padding: 0;
+  margin: 1rem;
+  /* height: 3rem; */
+}
+
+.password-field {
+  padding: 0;
+  margin: 1rem;
+}
+
+.login-button {
+  width: 50%;
+  margin: 2rem;
+}
