@@ -1,0 +1,59 @@
+/* TEXT CONTAINER */
+.login-sign-up-toggle-container {
+  display: flex;
+  /* justify-content: space-around; */
+  width: 80%;
+  /* position: relative; */
+  height: 5rem;
+  /* outline: solid 0.1rem rgb(126, 126, 126); */
+  /* border-radius: 0.6rem; */
+  /* background-color: rgba(175, 175, 175, 0); */
+  z-index: 3;
+}
+
+.toggle-and-square-container {
+  position: relative;
+  height: 6rem;
+  margin: 2rem 0 1rem;
+}
+
+.toggle-choice {
+  font-size: 2rem;
+  color: white;
+  font-weight: var(--button-font-weight);
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* PUT SLIDER UNDER OPTIONS */
+.login-sign-up-toggle-container,
+.toggle-square-container {
+  position: absolute;
+  top: 0rem;
+  right: 50%;
+  transform: translateX(50%);
+}
+
+.toggle-square-container {
+  display: flex;
+  width: 80%;
+  height: 5rem;
+  background-color: var(--light-grey);
+  border-radius: 0.7rem;
+}
+
+.toggle-square {
+  background-image: var(--main-gradient);
+  box-shadow: var(--main-glow);
+  width: 50%;
+  height: 100%;
+  border-radius: 0.7rem;
+  transition: margin-left 0.25s;
+  /* z-index: -1; */
+}
+
+.toggle-square.right {
+  margin-left: 50%;
+}

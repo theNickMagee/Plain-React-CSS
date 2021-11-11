@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Login from "../login/Login";
 import SignUp from "../signup/SignUp";
 import "./LoginAndSignUp.css";
+import "./Toggle.css";
 
 const LoginAndSignUp = (props) => {
   const [logInMode, setLogInMode] = useState(true);
