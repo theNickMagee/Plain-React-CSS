@@ -1,24 +1,21 @@
 .login-container {
   color: white;
-  background-color: rgb(71, 71, 71);
-
-  border-radius: 0.4rem;
-  /* font-size: 3rem; */
-
-  display: flex;
-  flex-direction: column;
-  /* justify-content: center; */
-  justify-content: space-around;
-  align-content: center;
-  text-align: center;
-  height: 30rem;
-  padding: 1rem 1rem;
-
-  width: 30rem;
+  /* background-color: rgb(71, 71, 71); */
+  flex: 1 0 auto;
+  margin: 0 1rem 2rem 1rem;
+  border-radius: 1rem;
 }
 
-.login-label {
-  font-size: 2rem;
+.login-sign-up-form-inputs {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid var(--main-color);
+}
+
+.login-sign-up-form-inputs::placeholder {
+  color: white;
 }
 
 .email-field {

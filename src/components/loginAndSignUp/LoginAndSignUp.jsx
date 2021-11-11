@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import Login from "../login/Login";
+import SignUp from "../signup/SignUp";
 import "./LoginAndSignUp.css";
 
 const LoginAndSignUp = (props) => {
@@ -14,18 +16,27 @@ const LoginAndSignUp = (props) => {
   };
 
   return (
-    <div className="login-container">
-      <div className="login-toggle-container">
-        <div className="login-choice" onClick={toggleToLogIn}>
-          Login
+    <div className="login-sign-up-container">
+      {/* TOP TOGGLE */}
+      {/* Because of the toggle requiring absolute positioning, both containers have hard-coded height */}
+      <div className="toggle-and-square-container">
+        <div className="login-sign-up-toggle-container">
+          <div className="toggle-choice" onClick={toggleToLogIn}>
+            Login
+          </div>
+          <div className="toggle-choice" onClick={toggleToSignUp}>
+            Sign Up
+          </div>
         </div>
-        <div className="login-choice" onClick={toggleToSignUp}>
-          Sign Up
+        <div className={`toggle-square-container`}>
+          <div
+            className={`toggle-square  ${logInMode ? "left" : "right"}`}
+          ></div>
         </div>
       </div>
-      <div className={`login-square-container`}>
-        <div className={`login-square  ${logInMode ? "left" : "right"}`}></div>
-      </div>
+      {/* Log in Mode or sign up mode? */}
+      {/* Note: these are styled margin of each component, to make simpler  */}
+      {logInMode ? <Login /> : <SignUp />}
     </div>
   );
 };

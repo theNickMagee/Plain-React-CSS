@@ -5,12 +5,14 @@ import Status from "./components/status/Status";
 import LoginAndSignUp from "./components/loginAndSignUp/LoginAndSignUp";
 
 function App() {
+  // Logged in state
   const [loggedIn, setLoggedIn] = useState(false);
 
   const logOut = () => {
     setLoggedIn(false);
   };
 
+  // Status viewer, Login and Sign up component, and logout button
   return (
     <div className="App">
       <div className="component-container">

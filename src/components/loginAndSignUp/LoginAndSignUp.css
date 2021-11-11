@@ -1,33 +1,41 @@
 /* ENTIER CONTAINER */
-.login-container {
+.login-sign-up-container {
+  /* DIMENSIONS AND STYLE */
   background-color: rgb(39, 39, 39);
   border-radius: 0.4rem;
   height: 40rem;
-  padding: 2rem 1rem;
   min-width: 40rem;
 
+  /* INNARDS */
+  padding: 0rem 1rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   align-content: center;
 
   position: relative;
 }
 
 /* TEXT CONTAINER */
-.login-toggle-container {
+.login-sign-up-toggle-container {
   display: flex;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   width: 80%;
-  position: relative;
+  /* position: relative; */
   height: 5rem;
   /* outline: solid 0.1rem rgb(126, 126, 126); */
-  border-radius: 0.6rem;
-  background-color: rgba(175, 175, 175, 0);
+  /* border-radius: 0.6rem; */
+  /* background-color: rgba(175, 175, 175, 0); */
   z-index: 3;
 }
 
-.login-choice {
+.toggle-and-square-container {
+  position: relative;
+  height: 6rem;
+  margin: 2rem 0 1rem;
+}
+
+.toggle-choice {
   font-size: 2rem;
   color: white;
   width: 50%;
@@ -37,25 +45,25 @@
 }
 
 /* PUT SLIDER UNDER OPTIONS */
-.login-toggle-container,
-.login-square-container {
+.login-sign-up-toggle-container,
+.toggle-square-container {
   position: absolute;
-  top: 3rem;
+  top: 0rem;
   right: 50%;
   transform: translateX(50%);
 }
 
-.login-square-container {
+.toggle-square-container {
   display: flex;
   width: 80%;
   height: 5rem;
-  background-color: rgb(109, 109, 109);
+  background-color: var(--light-grey);
   border-radius: 0.7rem;
 }
 
-.login-square {
-  background-image: linear-gradient(to right, #e44100, #ff5613);
-  box-shadow: 0 0 1rem #ff5613;
+.toggle-square {
+  background-image: var(--main-gradient);
+  box-shadow: var(--main-glow);
   width: 50%;
   height: 100%;
   border-radius: 0.7rem;
@@ -63,9 +71,6 @@
   /* z-index: -1; */
 }
 
-.login-square.right {
+.toggle-square.right {
   margin-left: 50%;
-}
-
-.login-square.right {
 }
