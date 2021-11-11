@@ -18,25 +18,32 @@ const Login = (props) => {
   return (
     <div className="login-container">
       <div className="email-field">
-        <MdEmail className="form-icon" size={20} style={{}} />
-        <input
-          className="login-sign-up-form-inputs"
-          type="text"
-          value={email}
-          placeholder="Email"
-          onChange={handleEmailChange}
-        />
-        <span className="input-border" />
+        <div className="icon-input-container">
+          <div className="field-label">Email</div>
+          {/* <MdEmail className="form-icon" size={20} style={{}} /> */}
+          <input
+            className="login-sign-up-form-inputs"
+            type="text"
+            value={email}
+            placeholder="Email"
+            onChange={handleEmailChange}
+          />
+          <span className="input-border" />
+        </div>
       </div>
       <div className="password-field">
-        <RiLockPasswordFill className="form-icon" size={20} style={{}} />
-        <input
-          className="login-sign-up-form-inputs"
-          type="password"
-          placeholder="Password"
-          value={password}
-          onChange={handlePasswordChange}
-        />
+        <div className="field-label">Password</div>
+        <div className="icon-input-container">
+          {/* <RiLockPasswordFill className="form-icon" size={20} style={{}} /> */}
+          <input
+            className="login-sign-up-form-inputs"
+            type="password"
+            placeholder="Password"
+            value={password}
+            onChange={handlePasswordChange}
+          />
+          <span className="input-border" />
+        </div>
       </div>
       <div className="login-button-container">
         <button className="login-button">Log In</button>
