@@ -1,7 +1,7 @@
 /* ENTIER CONTAINER */
 .login-sign-up-container {
   /* DIMENSIONS AND STYLE */
-  background-color: rgb(39, 39, 39);
+  background-color: var(--dark-grey);
   border-radius: 0.4rem;
   height: 40rem;
   min-width: 40rem;
@@ -38,6 +38,7 @@
 .toggle-choice {
   font-size: 2rem;
   color: white;
+  font-weight: var(--button-font-weight);
   width: 50%;
   display: flex;
   align-items: center;

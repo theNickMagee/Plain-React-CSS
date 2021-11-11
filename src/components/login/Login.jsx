@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { MdEmail } from "react-icons/md";
+import { RiLockPasswordFill } from "react-icons/ri";
 
 import "./Login.css";
 
@@ -16,6 +18,7 @@ const Login = (props) => {
   return (
     <div className="login-container">
       <div className="email-field">
+        <MdEmail className="form-icon" size={20} style={{}} />
         <input
           className="login-sign-up-form-inputs"
           type="text"
@@ -23,11 +26,13 @@ const Login = (props) => {
           placeholder="Email"
           onChange={handleEmailChange}
         />
+        <span className="input-border" />
       </div>
       <div className="password-field">
+        <RiLockPasswordFill className="form-icon" size={20} style={{}} />
         <input
           className="login-sign-up-form-inputs"
-          type="text"
+          type="password"
           placeholder="Password"
           value={password}
           onChange={handlePasswordChange}
@@ -35,6 +40,10 @@ const Login = (props) => {
       </div>
       <div className="login-button-container">
         <button className="login-button">Log In</button>
+      </div>
+      <div className="forgot-password-container">
+        Forgot Your Password?{" "}
+        <span className="forgot-password-click">Click Here</span>
       </div>
     </div>
   );

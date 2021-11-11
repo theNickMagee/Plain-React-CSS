@@ -2,8 +2,11 @@
   --main-color: #ff5613;
   --secondary-color: #e44100;
   --light-grey: rgb(109, 109, 109);
+  --lighter-grey: rgb(189, 189, 189);
+  --dark-grey: rgb(39, 39, 39);
   --main-gradient: linear-gradient(to right, #e44100, #ff5613);
-  --main-glow: 0 0 1rem #ff5613;
+  --main-glow: 0 0 0.5rem #ff5613;
+  --button-font-weight: 300;
 }
 
 * {
@@ -22,7 +25,9 @@ html {
   font-size: 62.5%;
 }
 
-body {
+body,
+button,
+input {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   line-height: 1.6;
