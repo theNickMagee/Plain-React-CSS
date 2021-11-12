@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Login from "../login/Login";
 import SignUp from "../signup/SignUp";
+
 import "./LoginAndSignUp.css";
 import "./Toggle.css";
 
@@ -36,7 +37,6 @@ const LoginAndSignUp = (props) => {
         </div>
       </div>
       {/* Log in Mode or sign up mode? */}
-      {/* Note: these are styled margin of each component, to make simpler  */}
       {logInMode ? <Login /> : <SignUp />}
     </div>
   );

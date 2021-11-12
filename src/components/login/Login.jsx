@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { MdEmail } from "react-icons/md";
 import { RiLockPasswordFill } from "react-icons/ri";
+import OtherSignInOptions from "../signInOptions/OtherSignInOptions";
 
 const Login = (props) => {
   const [email, setEmail] = useState("");
@@ -15,38 +16,38 @@ const Login = (props) => {
 
   return (
     <div className="login-signup-container">
-      <div className="icon-input-container">
+      <div className="label-input-container">
         <div className="field-label">Email</div>
         {/* <MdEmail className="form-icon" size={20} style={{}} /> */}
         <input
           className="form-input"
           type="text"
           value={email}
-          placeholder="Email"
+          placeholder="Enter your email here"
           onChange={handleEmailChange}
         />
-        <span className="input-border" />
+        {/* <span className="input-border" /> */}
       </div>
 
-      <div className="icon-input-container">
+      <div className="label-input-container">
         <div className="field-label">Password</div>
         {/* <RiLockPasswordFill className="form-icon" size={20} style={{}} /> */}
         <input
           className="form-input"
           type="password"
-          placeholder="Password"
+          placeholder="Enter your password here"
           value={password}
           onChange={handlePasswordChange}
         />
-        <span className="input-border" />
+        {/* <span className="input-border" /> */}
       </div>
       <div className="login-button-container">
         <button className="login-button">Log In</button>
+        <div className="forgot-password-click">Forgot Your Password? </div>
       </div>
-      <div className="forgot-password-container">
-        Forgot Your Password?{" "}
-        <span className="forgot-password-click">Click Here</span>
-      </div>
+      {/* <div className="forgot-password-container"></div> */}
+      <div className="or-container">Or</div>
+      <OtherSignInOptions signIn={true} />
     </div>
   );
 };
