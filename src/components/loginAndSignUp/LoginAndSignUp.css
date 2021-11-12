@@ -5,6 +5,7 @@
   border-radius: 0.4rem;
   height: 64rem;
   min-width: 40rem;
+  max-width: 50rem;
 
   /* INNARDS */
   padding: 1rem 1rem;
@@ -58,14 +59,6 @@
 
 .label-input-container {
   margin: 2rem 0;
-  /* display: flex; */
-  /* justify-content: space-between; */
-  /* align-items: baseline; */
-  /* flex-direction: column; */
-  /* height: 20%; */
-  /* flex: 0 0 20%; */
-  /* margin: 1rem 0; */
-  /* height: 6rem; */
 }
 
 .form-input:active,
@@ -73,11 +66,6 @@
   border-bottom: 2px solid var(--main-color);
   /* height: 1px; */
 }
-/* 
-.form-icon {
-  color: var(--light-grey);
-  margin-right: 1rem;
-} */
 
 .login-button-container {
   display: flex;

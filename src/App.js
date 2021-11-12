@@ -3,6 +3,7 @@ import "./App.css";
 
 import Status from "./components/status/Status";
 import LoginAndSignUp from "./components/loginAndSignUp/LoginAndSignUp";
+import ChooseSubscription from "./components/chooseSubscription/ChooseSubscription";
 
 function App() {
   // Logged in state
@@ -26,6 +27,10 @@ function App() {
         <>
           <div className="component-container">
             <LoginAndSignUp />
+          </div>
+
+          <div className="component-container">
+            <ChooseSubscription />
           </div>
         </>
       )}
