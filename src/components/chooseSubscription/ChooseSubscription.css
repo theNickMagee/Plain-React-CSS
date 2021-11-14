@@ -1,0 +1,60 @@
+.subscription-chooser {
+  background-color: var(--dark-grey);
+  min-width: 60rem;
+  max-width: 90rem;
+  flex: 1 1 0;
+  border-radius: var(--card-border-radius);
+
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+}
+
+.subscription-choose-content {
+  align-self: center;
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.subscription-chooser__title {
+  color: var(--almost-white);
+  font-weight: var(--button-font-weight);
+  font-size: 3rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
+}
+
+.subscription-chooser__cards {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  align-self: center;
+  /* margin: 4rem; */
+  /* padding: 0 4rem; */
+}
+
+.subscription-chooser__payment-section,
+.subscription-choose__due-dates {
+  width: 80%;
+  border-radius: 1.4rem;
+  align-self: center;
+  color: white;
+  font-size: 2.2rem;
+  margin: 4rem 0 0 0;
+}
+
+.subscription-chooser__payment-section {
+  border: 2px solid var(--light-grey);
+}
+
+.due-date {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+  font-weight: 500;
+}

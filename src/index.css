@@ -7,6 +7,8 @@
   --main-gradient: linear-gradient(to right, #e44100, #ff5613);
   --main-glow: 0 0 0.2rem #ff5613;
   --button-font-weight: 700;
+  --card-border-radius: 0.4rem;
+  --almost-white: rgb(231, 231, 231);
 }
 
 * {

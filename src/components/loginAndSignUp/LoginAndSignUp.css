@@ -2,7 +2,7 @@
 .login-sign-up-container {
   /* DIMENSIONS AND STYLE */
   background-color: var(--dark-grey);
-  border-radius: 0.4rem;
+  border-radius: var(--card-border-radius);
   height: 64rem;
   min-width: 40rem;
   max-width: 50rem;
