@@ -47,6 +47,7 @@
   padding: 1rem 2rem;
 
   margin-top: 1rem;
+  font-weight: 500;
 }
 
 .subscription-card__button.selected {

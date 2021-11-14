@@ -38,6 +38,9 @@ const ChooseSubscription = (props) => {
         <div className="subscription-chooser__payment-section">
           <PaymentArea />
         </div>
+        <div className="subscription-chooser__submit-button-container">
+          <button className="submit-button">SUBMIT</button>
+        </div>
       </div>
     </div>
   );
