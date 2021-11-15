@@ -61,7 +61,7 @@ const SignUp = (props) => {
         {/* <span className="input-border"></span> */}
       </div>
       <div className="login-button-container">
-        <button className="login-button">Sign Up</button>
+        <button className="login-button">Start Your Free Trial</button>
       </div>
       <div className="or-container">Or</div>
       <OtherSignInOptions signIn={false} />

@@ -84,7 +84,8 @@
   box-shadow: var(--main-glow);
   color: white;
   background-image: var(--main-gradient);
-  height: 5rem;
+  min-height: 5rem;
+  padding: 1rem;
   border-radius: 1rem;
   font-size: 1.8rem;
   font-weight: var(--button-font-weight);
