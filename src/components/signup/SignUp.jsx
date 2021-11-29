@@ -99,6 +99,7 @@ const SignUp = (props) => {
         isInvalid={emailInvalid}
         value={email}
         onValueChange={handleEmailChange}
+        placeholder="Enter your email here"
       />
 
       <UnderlinedTextInput
@@ -107,6 +108,7 @@ const SignUp = (props) => {
         value={password}
         onValueChange={handlePasswordChange}
         type={"password"}
+        placeholder="Enter your password here"
       />
 
       <UnderlinedTextInput
@@ -115,6 +117,7 @@ const SignUp = (props) => {
         value={repeatPassword}
         onValueChange={handleRepeatPasswordChange}
         type={"password"}
+        placeholder="Repeat your password here"
       />
 
       {invalidMessage && invalidMessage.length > 1 && (

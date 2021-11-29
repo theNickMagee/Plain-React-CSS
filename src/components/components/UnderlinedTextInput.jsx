@@ -10,6 +10,7 @@ const UnderlinedTextInput = ({
   value,
   onValueChange,
   type,
+  placeholder,
 }) => {
   const [isActive, setIsActive] = useState(false);
   const [passwordVisible, setPasswordVisible] = useState(false);
@@ -35,7 +36,7 @@ const UnderlinedTextInput = ({
         <input
           className={`form-input ${isInvalid ? "invalid" : ""}`}
           value={value}
-          placeholder="Enter your email here"
+          placeholder={placeholder}
           onChange={onValueChange}
           onBlur={() => setIsActive(false)}
           onFocus={() => setIsActive(true)}

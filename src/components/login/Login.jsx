@@ -3,6 +3,8 @@ import { MdEmail } from "react-icons/md";
 import { RiLockPasswordFill } from "react-icons/ri";
 import OtherSignInOptions from "../signInOptions/OtherSignInOptions";
 
+import UnderlinedTextInput from "../components/UnderlinedTextInput";
+
 const Login = (props) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -16,31 +18,23 @@ const Login = (props) => {
 
   return (
     <div className="login-signup-container">
-      <div className="label-input-container">
-        <div className="field-label">Email</div>
-        {/* <MdEmail className="form-icon" size={20} style={{}} /> */}
-        <input
-          className="form-input"
-          type="text"
-          value={email}
-          placeholder="Enter your email here"
-          onChange={handleEmailChange}
-        />
-        {/* <span className="input-border" /> */}
-      </div>
+      <UnderlinedTextInput
+        label={"Email"}
+        isInvalid={false}
+        value={email}
+        onValueChange={handleEmailChange}
+        placeholder="Enter your email here"
+      />
 
-      <div className="label-input-container">
-        <div className="field-label">Password</div>
-        {/* <RiLockPasswordFill className="form-icon" size={20} style={{}} /> */}
-        <input
-          className="form-input"
-          type="password"
-          placeholder="Enter your password here"
-          value={password}
-          onChange={handlePasswordChange}
-        />
-        {/* <span className="input-border" /> */}
-      </div>
+      <UnderlinedTextInput
+        label={"Password"}
+        isInvalid={false}
+        value={password}
+        onValueChange={handlePasswordChange}
+        type={"password"}
+        placeholder="Enter your password here"
+      />
+
       <div className="login-button-container">
         <button className="login-button">Log In</button>
         <div className="forgot-password-click">Forgot Your Password? </div>
