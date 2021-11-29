@@ -3,7 +3,7 @@
   /* DIMENSIONS AND STYLE */
   background-color: var(--dark-grey);
   border-radius: var(--card-border-radius);
-  height: 64rem;
+  min-height: 64rem;
   min-width: 40rem;
   max-width: 50rem;
 
@@ -33,38 +33,11 @@
   padding: 0 5rem 0 5rem;
 }
 
-.form-input {
+.invalid-message-container {
+  color: rgb(255, 76, 76);
   width: 100%;
-  border: 0;
-  outline: 0;
-  background: transparent;
-  border-bottom: 2px solid var(--lighter-grey);
-  color: white;
-  transition: 0.17s ease-in;
-  /* padding: 0rem 0 0.5rem 0; */
-  /* height: 3rem; */
-  /* margin: 0 3rem; */
-}
-
-.form-input::placeholder {
-  color: var(--light-grey);
-}
-
-.field-label {
-  /* margin-bottom: 0.4rem; */
-  font-size: 1.3rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-}
-
-.label-input-container {
-  margin: 2rem 0;
-}
-
-.form-input:active,
-.form-input:focus {
-  border-bottom: 2px solid var(--main-color);
-  /* height: 1px; */
+  display: flex;
+  justify-content: center;
 }
 
 .login-button-container {
@@ -78,6 +51,7 @@
 .login-button {
   width: 70%;
   align-self: center;
+  cursor: pointer;
   /* margin: 2rem; */
   outline: 0;
   border: 0;
