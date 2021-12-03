@@ -73,18 +73,11 @@ const SignUp = (props) => {
 
   const checkPasswordMatch = () => {
     if (password !== repeatPassword) {
+      setPasswordInvalid(true);
       return "Passwords must match.";
     } else {
       return false;
     }
-  };
-
-  const togglePasswordShow = () => {
-    setPasswordShow(!passwordShow);
-  };
-
-  const toggleRepeatPasswordShow = () => {
-    setRepeatPasswordShow(!repeatPasswordShow);
   };
 
   useEffect(() => {

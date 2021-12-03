@@ -3,11 +3,11 @@ import axios from "axios";
 const API_URL = "http://localhost:5000/api/auth/";
 
 class AuthService {
-  login(username, password) {
+  login(email, password) {
     return axios
       .post(API_URL + "signin", {
-        username,
-        password,
+        email: email,
+        password: password,
       })
       .then((response) => {
         if (response.data.accessToken) {
@@ -23,9 +23,11 @@ class AuthService {
   }
 
   register(email, password) {
+    console.log({ email: email, password: password, roles: [] });
     return axios.post(API_URL + "signup", {
       email: email,
       password: password,
+      roles: [],
     });
   }
 

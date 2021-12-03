@@ -5,6 +5,8 @@ import OtherSignInOptions from "../signInOptions/OtherSignInOptions";
 
 import UnderlinedTextInput from "../components/UnderlinedTextInput";
 
+import AuthService from "../../AuthService";
+
 const Login = (props) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -31,6 +33,16 @@ const Login = (props) => {
       setInvalidMessage(checkPassword());
       return;
     }
+    AuthService.login(email, password)
+      .then((value) => {
+        console.log(value);
+      })
+      .catch((e) => {
+        setInvalidMessage("Email and password not found.");
+        setEmailInvalid(true);
+        setPasswordInvalid(true);
+        console.log("error logging in: ", e);
+      });
   };
 
   const checkEmail = () => {
@@ -52,6 +64,7 @@ const Login = (props) => {
   useEffect(() => {
     setEmailInvalid(false);
     setPasswordInvalid(false);
+    setInvalidMessage("");
   }, [email, password]);
 
   return (
